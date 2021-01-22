@@ -1,0 +1,75 @@
+button, input, select, textarea {
+  font-family: 'Poppins';
+  line-height: 25px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+h1 {
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size: 80px;
+  text-align: center;
+}
+h2 {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #008000;
+  margin-top: 0px;
+  line-height: 10%;
+}
+#column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 22px;
+  padding-right: 5px;
+}
+button {
+  margin-top: 15px;
+  line-height: 35px;
+  background-color: #008000;
+  color: white;
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid grey;
+  margin-top: 40px;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+table, th, td {
+  border: 2px solid grey;
+  padding-left: 8px;
+}
+.deleteBtn {
+  background-color: white;
+  border: none;
+  margin-top: 9px;
+}
+
+#totalbtn {
+  position: absolute;
+  margin-left: 72%;
+}
+span {
+  position: absolute;
+  width: 50%;
+  margin-top: 11px;
+  margin-left: 42px;
+  font-family: 'Poppins';
+  font-size: 25px;
+  
+}
+
