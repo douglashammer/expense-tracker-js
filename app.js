@@ -46,17 +46,22 @@ const totalBtn = document.querySelector('#totalbtn');
 
 function calculateTotal(e) {
   const totalEl = document.querySelector('span');
+
+  var numUSD = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  })
+
   var total = 0;
   for (var i = 1; i < table.rows.length; i++) {
     var amountVals = parseFloat(table.rows[i].cells[2].innerHTML);
     total += amountVals;
   }
-  let template = `
-  <span>Total: $${total} &#128550</span>
-  `;
+  const template = `
+    <span>Total: ${numUSD.format(total)} &#128550</span>
+    `;
 
   totalEl.innerHTML += template;
-
 }
 
 // runs calculate total function on click
